@@ -1,0 +1,172 @@
+@import url("whitespace-reset.css");
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+html {
+  font: normal 20px "Nunito Sans", Avenir, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #3D4043;
+}
+
+body {
+  background: #2f2840 url("images/bg_body.gif") 50% 0 repeat;
+}
+
+header, main, footer {
+  width: 1200px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+header img {
+  display: block;
+  margin: 130px auto 80px auto;
+}
+
+nav ul {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 45px 42px;
+}
+
+nav a {
+  color: #C3C3C3;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.active {
+  color: #6BB0F9;
+  font-weight: bold;
+}
+
+main {
+  background-color: white;
+  padding: 87px 185px 83px 185px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 35px;
+  letter-spacing: 0.5px;
+  font-size: 1.8rem;
+}
+
+h2::before,
+h2::after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 22px;
+  vertical-align: 5px;
+  content: "\2022";
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #3651A3;
+}
+
+p {
+  letter-spacing: 0.01rem
+  line-height: 28px;
+  padding-top: 10px;
+}
+
+.about {
+  margin-bottom: 40px;
+}
+
+footer {
+  background-color: #E3E3E3;
+  margin: 0 auto;
+  color: #A9A9A9;
+  padding: 80px 0 75px 0;
+}
+
+footer p {
+  padding: 0 320px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background:
+    transparent
+    url("images/icons_social-media.png")
+    0 0 no-repeat;
+  display: block;
+  height: 46px;
+  overflow: hidden;
+  text-indent: -8685px;
+  width: 46px;
+}
+
+footer li a.twitter {
+  background-position: 0 0;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}
+
+#projects figure {
+  display: flex;
+  justify-content: center;
+}
+#projects figure > img {
+  display: block;
+  width: 1000px;
+  margin: 20px auto 48px auto;
+}
+
+#team ul {
+  display: flex;
+  justify-content: center;
+}
+
+#team li {
+  margin: 130px 30px;
+}
+
+#team img {
+  display: block;
+  width: 140px
+}
+
+#team img ~ h3 {
+  margin-top: 33px;
+  font-weight: normal;
+}

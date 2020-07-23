@@ -1,0 +1,275 @@
+@import url("whitespace-reset.css");
+
+html {
+  font: normal 16px Arial, sans-serif;
+  color: black;
+}
+
+* {
+  box-sizing: border-box;
+  font-weight: 100;
+}
+
+nav, header, main, footer {
+  width: 100%;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  background-color: white;
+  border-top: solid 10px #F3F3F3;
+}
+
+nav ul {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+nav li {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  display: inline-block;
+  padding: 0 22px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  line-height: 44px;
+}
+
+header {
+  background: url("images/front.jpg") no-repeat;
+  background-position: center;
+  text-align: center;
+  height: 430px;
+  margin-top: 53px;
+  color: white;
+}
+
+header figure {
+  display: inline-block;
+  margin-top: 150px;
+}
+
+header h1 {
+  font-size: 4.5rem;
+  padding: 10px 0;
+  font-weight: 300;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding-bottom: 75px;
+}
+
+main > section {
+  padding: 70px 0px;
+  margin: 0 40px;
+  border-bottom: solid 1px #F3F3F3;
+}
+
+#tickets,
+#speakers,
+h3 {
+  text-align: center;
+}
+
+h3 {
+  font-size: 44px;
+  padding-bottom: 35px;
+}
+
+p {
+  line-height: 30px;
+}
+
+a[role="button"] {
+  background-color: green;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 13px 30px;
+  margin-top: 5px;
+}
+
+a[role="button"]:hover {
+  background-color: #1E5316;
+}
+
+#speakers ul {
+  display: grid;
+  grid-template-columns: 280px 280px 280px;
+  grid-template-rows: 380px 380px;
+  grid-gap: 12px;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#speakers li {
+  border: solid 1px #F3F3F3;
+}
+
+.container {
+  position: relative;
+}
+
+#speakers .person {
+  background-color: white;
+  z-index: 2;
+  position: absolute;
+  height: 378px;
+}
+
+#speakers .info {
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+  height: 378px;
+}
+
+.info p {
+  color: white;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 15px;
+}
+
+#speakers li:hover .person {
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+h4 {
+  color: #29711E;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 40px;
+  letter-spacing: 0.03rem
+}
+
+.info h4:hover {
+  text-decoration: underline;
+}
+
+#speakers img {
+  width: 100%;
+  display: block;
+}
+
+table {
+  width: 960px;
+  margin: 0 auto;
+  border-bottom: 1px solid #F3F3F3;
+}
+
+td {
+  width: 85px;
+  padding: 12px 10px;
+  border-top: 1px solid #F3F3F3;
+  font-size: 24px;
+}
+
+td + td {
+  width: 720px;
+}
+
+td + td + td {
+  width: 155px;
+}
+
+table img {
+  width: 132px;
+  display: block;
+}
+
+dd {
+  padding-top: 10px;
+  color: green;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h3 + section {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#papers p {
+  line-height: 24px;
+  padding: 10px 0;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#sponsors ul {
+  display: flex;
+}
+
+#sponsors li {
+  margin-right: 5px;
+}
+
+#sponsors img {
+  width: 300px;
+  height: 255px;
+}
+
+ul + h5 {
+  padding-top: 40px;
+}
+
+footer {
+  background: url("images/people.jpg") no-repeat center 23%;
+  background-size: cover;
+  height: 340px
+}
+
+footer h1 {
+  padding: 45px 0 30px 0;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+}
+
+.banner {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+  color: white;
+}
+
+.banner section {
+  width: 960px;
+  margin: 0 auto;
+}
+
+footer h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@media screen and (m)
+
+
+
+

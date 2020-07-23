@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Todo List</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Flexbox container -->
+    <div class="flexbox">
+
+    <header>
+      <!-- Navigation toggle button -->
+      <label class="menu_button" for="menu_toggle">
+        <img src="images/hamburger.png" alt="Menu toggle button" />
+      </label>
+      <input type="checkbox" id="menu_toggle" />
+
+      <!-- Navigation sidebar contents -->
+      <nav>
+
+        <!-- All Todos List -->
+        <ul>
+          <li class="title">
+            <img src="images/all-todos.png" alt="all todos" />
+            <dl>
+              <dt>All Todos</dt>
+              <dd>18</dd>
+            </dl>
+          </li>
+          <li class="selected">
+            <a href="#">
+              <dl>
+                <dt>02/16</dt>
+                <dd>8</dd>
+              </dl>
+            </a>
+         </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>03/16</dt>
+                <dd>2</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>04/16</dt>
+                <dd>1</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>05/16</dt>
+                <dd>1</dd>
+              </dl>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <dl>
+                <dt>06/16</dt>
+                <dd>6</dd>
+              </dl>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Completed Todos List -->
+        <ul>
+          <li class="title">
+            <img src="images/done.png" alt="ticked box" />
+            Completed
+          </li>
+          <li>02/15</li>
+          <li>03/15</li>
+          <li>04/15</li>
+          <li>05/15</li>
+          <li>06/14</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+      <section>
+
+        <!-- Main Content Titles -->
+        <div>
+          <h1>02/16</h1>
+          <h2>8</h2>
+        </div>
+
+        <!-- Add new todo link -->
+        <a href="#">
+          <img src="images/plus.png" alt="plus sign" />Add new to do
+        </a>
+
+        <!-- List of Todo Items -->
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+            </a>
+
+            <!-- Activation for Edit Form -->
+            <label for="item_1">Item 1</label>
+            <input type="checkbox" id="item_1" />
+
+            <!-- Edit Todo Form -->
+            <form action="#" method="post">
+              
+              <label for="title">Title</label>
+              <input type="text" name="title" value="Item 1" id="title">
+
+              <label for="due_date">Due Date</label>
+
+              <fieldset>
+
+                <!-- Flexbox container -->
+                <div class="container">
+                  <select required name="day" id="due_date">
+                    <option value="" selected disabled >Day</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="16">16</option>
+                  </select>
+                  <i>/</i>
+                  <select required name="month">
+                    <option value="" selected disabled >Month</option>
+                    <option value="may">May</option>
+                    <option value="june">June</option>
+                  </select><i>/</i>
+                  <select required name="year">
+                    <option value="" selected disabled >Year</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option>
+                  </select>
+                </div>
+              </fieldset>
+              
+              <label for="description">Description</label>
+              <textarea placeholder="Description" id="description"></textarea>
+              
+              <fieldset>
+
+                <!-- Flexbox container -->
+                <div class="container">
+                  <input type="submit" name="save" value="Save" />
+                  <input type="submit" name="save" value="Mark As Complete" formaction="#" />
+                </div>
+              </fieldset>
+             
+            </form>
+
+            <!-- Modal Overlay -->
+            <div class="modal_overlay"></div>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <p>Item 2</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li class="complete">
+            <a href="#">
+              <img src="images/ticked-box.png" alt="ticked box" />
+              <p>Item 3</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li class="complete">
+            <a href="#">
+              <img src="images/ticked-box.png" alt="ticked box" />
+              <p>Item 4</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li class="complete">
+            <a href="#">
+              <img src="images/ticked-box.png" alt="ticked box" />
+              <p>Item 5</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <p>Item 6</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <p>Item 7</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <p>Item 8</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">
+              <img src="images/unticked-box.png" alt="unticked box" />
+              <p>Item 9</p>
+            </a>
+          </li>
+          <li>
+            <img src="images/trash.png" alt="trash can" />
+          </li>
+        </ul>
+      </section>
+    </main>
+    </div>
+
+  </body>
+</html>
